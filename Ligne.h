@@ -1,5 +1,6 @@
 #ifndef LIGNE_H
 #define LIGNE_H
+#include <cstddef> 
 
 class Article;
 

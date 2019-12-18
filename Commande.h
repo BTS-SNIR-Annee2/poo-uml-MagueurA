@@ -2,31 +2,29 @@
 #define COMMANDE_H
 
 #include <vector>
+#include <string>
 
-using namespace std;
 
 #include "Ligne.h"
 
 class Commande
 {
    private:
-      string reference;
-      string date;
-      vector<Ligne> liste;
+      std::string reference;
+      std::string date;
+      std::vector<Ligne> liste;
 
    public:
-      Commande(string reference="", string date="");
+      Commande(std::string reference="", std::string date="");
 
-      string getReference() const;
-      void setReference(string reference);
-      string getDate() const;
-      void setDate(string date);
+     std::string getReference() const;
+      void setReference(std::string reference);
+      std::string getDate() const;
+      void setDate(std::string date);
       Ligne getLigne(int numero) const;
       void setLigne(const Ligne &l);      
-      
       double getTotal();
       int getNbArticles() const;
-      
       void afficher();
 };
 

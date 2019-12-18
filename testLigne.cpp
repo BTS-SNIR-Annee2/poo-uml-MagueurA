@@ -8,7 +8,8 @@ using namespace std;
 
 int main() 
 {
-   /* Question 2 */
+
+   /* Question 2*/ 
    Ligne l1;
    
    cout << "Question 2 : " << endl;
@@ -21,11 +22,11 @@ int main()
     * 
     */
    
-   
+  
    /* Question 3 */
    Article a1, a2("A Game of Thrones - Le Trone de fer, tome 1", 13.29), a3("Le Trone de fer, Tome 13 : Le Bucher d'un roi", 17.96);
    a1.setTitre("Le Trone de fer, tome 14");
-   a1.setPrix(12.);
+   a1.setPrix(12.5);
    
    Ligne l2, l3(&a3, 0);
    
@@ -62,6 +63,7 @@ int main()
    l1.setArticle(&a1);
    l1.setQuantite(2);
    
+   cout << setfill('-') << setw(80) << "\n";
    cout << setfill(' ') << setw(3) << "Qte"; 
    cout << "|" << setfill(' ') << setw(50) << "Description"; 
    cout << "|" << setfill(' ') << setw(8) << "Prix uni"; 
@@ -76,6 +78,10 @@ int main()
    cout << endl;
    cout << endl;   
    
+   int a = 112;
+   cout << "valeur de a = " << setfill('x') << setw(6) << a << endl;
+   cout << "valeur de a = " << setfill('d') << a << setw(5) << endl;
+   cout << "valeur de a = " << setfill('t') << setw(5) << endl;
    /*
     * Vous devez obtenir :
     * Qte|                                       Description|Prix uni|         Total

@@ -33,4 +33,3 @@ Commande.o: Commande.cpp Commande.h
 
 clean:
 	rm -f testCommande testLigne testArticle *.o *~
-

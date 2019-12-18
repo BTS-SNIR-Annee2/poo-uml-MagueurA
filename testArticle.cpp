@@ -12,7 +12,7 @@ int main()
    
    cout << "Question 1 : " << endl; 
    a1.setTitre("Le Trone de fer, tome 14");
-   a1.setPrix(12.);
+   a1.setPrix(12.56);
    cout << "Titre de l'article : " << a1.getTitre() << endl;
    cout << "Prix  de l'article : " << a1.getPrix() << endl;
    cout << "Titre de l'article : " << a2.getTitre() << endl;

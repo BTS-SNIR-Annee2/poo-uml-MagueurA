@@ -1,19 +1,23 @@
 #ifndef ARTICLE_H
 #define ARTICLE_H
+#include <string>
 
 class Article
+
+
+
 {
    private:
-      string titre;
+      std::string titre;
       double prix;
 
    public:
-      Article(string titre="", double prix=0.);
+      Article(std::string titre="poupou", double prix=0.);
 
-      string getTitre() const;
+      std::string getTitre() const;
       double getPrix() const;
-      void setTitre(string titre);
-      void setPrix(double prix);
+      void setTitre(std::string newtitre);
+      void setPrix(double newprix);
 };
 
 #endif //ARTICLE_H
